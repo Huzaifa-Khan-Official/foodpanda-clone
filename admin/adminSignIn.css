@@ -12,10 +12,6 @@ body {
     height: 100vh;
 }
 
-.adminLoginDiv {
-    width: 500px;
-}
-
 .headingDiv {
     background-color: #16A085;
     color: white;
@@ -30,7 +26,8 @@ body {
     padding: 30px 20px;
 }
 
-.emailInputDiv, .passwordInputDiv {
+.emailInputDiv,
+.passwordInputDiv {
     display: flex;
     align-items: center;
 }
@@ -39,24 +36,62 @@ body {
     margin-top: 15px;
 }
 
-.userIconDiv, .passwordIconDiv {
+.userIconDiv,
+.passwordIconDiv {
     background-color: #16A085;
-    width: 8%;
     padding: 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.inputDiv {
-    width: 92%;
-}
 
-#emailInput, #passwordInput {
+
+#emailInput,
+#passwordInput {
     font-size: 16px;
     padding: 8px 20px;
     width: 100%;
 }
 
-#emailInput:focus, #passwordInput:focus {
+#emailInput:focus,
+#passwordInput:focus {
     outline: 0;
 }
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: 0.5;
+
+    &:before {
+        content: "";
+        background: linear-gradient(to right, transparent, #000000, transparent);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+    }
+}
+
+.btnDiv {
+    text-align: center;
+}
+
+#adminLoginBtn {
+    width: 100%;
+    background-color: #1ABC9C;
+    color: white;
+    padding: 8px 0;
+    border: none;
+    transition: all .3s;
+}
+
+#adminLoginBtn:hover {
+    background-color: #16A085;
+}  
