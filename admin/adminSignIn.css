@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1ABC9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.adminLoginDiv {
+    width: 500px;
+}
+
+.headingDiv {
+    background-color: #16A085;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.contentDiv {
+    background-color: white;
+    padding: 30px 20px;
+}
+
+.emailInputDiv, .passwordInputDiv {
+    display: flex;
+    align-items: center;
+}
+
+.passwordInputDiv {
+    margin-top: 15px;
+}
+
+.userIconDiv, .passwordIconDiv {
+    background-color: #16A085;
+    width: 8%;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.inputDiv {
+    width: 92%;
+}
+
+#emailInput, #passwordInput {
+    font-size: 16px;
+    padding: 8px 20px;
+    width: 100%;
+}
+
+#emailInput:focus, #passwordInput:focus {
+    outline: 0;
+}
