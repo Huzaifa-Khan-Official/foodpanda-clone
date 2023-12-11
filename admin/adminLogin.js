@@ -61,3 +61,6 @@ passwordInput.addEventListener("keypress", (event) => {
     }
 })
 
+if (localStorage.getItem("adminId")) {
+    location.href = "./admin.html";
+}
