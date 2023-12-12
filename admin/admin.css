@@ -93,8 +93,8 @@ body {
 }
 
 
-#addCategoryBtn {
-    background-color: black;
+#addCategoryBtn, #addCategoryModalBtn {
+    background-color: rgb(40, 39, 39);
     color: #fff;
     border: 1px solid white;
     padding: 10px 20px;
@@ -102,11 +102,29 @@ body {
     transition: all 1s;
 }
 
-#addCategoryBtn:hover {
+.closeModalBtn {
+    transition: all 1s;
+}
+
+#addCategoryBtn:hover, #addCategoryModalBtn:hover, .closeModalBtn:hover {
     background-color: #F01543;
     border-color: #F01543;
 }
 
 .previousCategoriesHeadingDiv{
     padding: 10px 10px;
+}
+
+#errorPara, #upderrorPara {
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.inputDiv .form-label {
+    color: black;
+}
+
+.prevCategHeadDiv {
+    display: none;
 }

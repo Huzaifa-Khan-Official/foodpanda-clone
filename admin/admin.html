@@ -69,22 +69,45 @@
     <div class="contentDiv">
         <div class="addCategoriesDiv">
             <div class="addCategoryBtnDiv">
-                <button id="addCategoryBtn">Add Category</button>
+                <button id="addCategoryModalBtn" data-bs-toggle="modal" data-bs-target="#addCategoryModal">Add Category</button>
             </div>
         </div>
         <div class="previousCategoriesDiv">
-            <div class="previousCategoriesHeadingDiv">
+            <div class="prevCategHeadDiv">
                 <h3>Previous Categories</h3>
             </div>
             <div class="previousCategoriesListDiv">
-                <ol id="previousCategoriesList">
-                    <li>Nothing to show here</li>
+                <ol id="prevCategList">
                 </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addCategoryModalLabel">Add Category</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="inputDiv">
+                        <label class="form-label">Add Category</label>
+                        <input type="text" placeholder="Add Category" id="addCatInp" class="form-control">
+                    </div>
+                    <p id="errorPara"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary closeModalBtn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="addCategoryBtn">Add Category</button>
+                </div>
             </div>
         </div>
     </div>
     <!-- javaScript Files -->
     <script type="module" src="admin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
