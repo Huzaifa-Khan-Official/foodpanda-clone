@@ -18,3 +18,6 @@ getAdminCredentials();
 if (!localStorage.getItem("adminId")) {
     location.href = "./adminSignIn.html";
 }
+
+
+const previousCategoriesList = document.querySelector("#previousCategoriesList");

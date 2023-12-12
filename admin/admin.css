@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #000929;
+    color: white;
+}
+
 .navbar {
-    position: fixed;
     width: 100%;
     z-index: 999;
     margin-top: 10px;
@@ -13,8 +17,96 @@
     background-color: transparent !important;
 }
 
+.navbar a {
+    color: white !important;
+
+}
+
 .navbar>.container-fluid {
     display: flex;
     gap: 18px;
     justify-content: center;
+}
+
+.dropdown-menu {
+    animation: dropdownBlock 1s ease 0s 1 normal forwards;
+    background-color: transparent;
+}
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:target {
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@keyframes dropdownBlock {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.nav-link,
+.dropdownItem p {
+    position: relative;
+}
+
+#line::before,
+#line2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #F01543;
+    transition: width 0.9s ease;
+}
+
+.nav-item:hover #line::before,
+.dropdownItem:hover #line2::before {
+    width: 80%;
+}
+
+.nav-item:hover .nav-link {
+    color: #F01543 !important;
+}
+
+.dropdownItem p {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contentDiv {
+    padding: 0 20px;
+}
+
+
+#addCategoryBtn {
+    background-color: black;
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+#addCategoryBtn:hover {
+    background-color: #F01543;
+    border-color: #F01543;
+}
+
+.previousCategoriesHeadingDiv{
+    padding: 10px 10px;
 }
